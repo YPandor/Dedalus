@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yunus Pandor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/styles.css">
+
+</head>
+<body>
+        <div class="row p-3" >
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="/">Yunus Pandor</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/YPandor">Github</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://uk.linkedin.com/in/yunus-pandor-05961356">linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <br>
+            <br>
+
+            <div class="p-3">
+                <img src="/hero.jpg" alt="hero image" class="rounded mx-auto d-block" width="50%" length="50%">
+            </div>
+
+            <div id="about" class="p-3">
+                <p>I am a self taught web developer who has an interest in all things technology. I would like to get into the tech sector and if given the opportunity I will be able to prove that I am able to learn, grow and show that I can become a valuable team player</p>
+                <p>In the future, I would like to make my way up to a senior developer and help shape the projects that I would be working on. I would also like to then take the opportunity to help others who are in a similar position that I am in now.</p>
+            </div>
+
+
+            <div class="p-3">
+                <h4>My skills</h4>
+                <button type="button" onclick="displaySkill('html', 'htmlParagraph')" id="htmlButton">HTML</button>
+                <button type="button" onclick="displaySkill('css', 'cssParagraph')" id="cssButton">CSS</button>
+                <button type="button" onclick="displaySkill('css', 'cssParagraph')" id="cssButton">CSS</button>
+                <button type="button" onclick="displaySkill('javascript', 'javascriptParagraph')" id="javascriptButton">Javascript</button>
+                <button type="button" onclick="displaySkill('php', 'phpParagraph')" id="phpButton">PHP</button>
+                <button type="button" onclick="displaySkill('systems', 'systemsParagraph')" id="systemsButton">Systems</button>
+            </div>
+
+            <br>
+            <br>
+
+            <div class="p-3">
+                <div id="htmlParagraph" class="skills">
+                    <p>I have experience using HTML and understand how it works, although I am still in the learning stage and experiencing new ways of using HTML.</p>
+                </div>
+                <div id="cssParagraph" class="skills">
+                    <p>I have a little bit of experience with CSS. I understand the basics of CSS and how it works. I understand that it works by the code being read top to bottom and if there is a duplicate it takes the last attribute. There are also ways in which you can make using CSS easier and more manageable with plugins like bootstrap, tailwind and others.</p>
+                </div>
+                <div id="javascriptParagraph" class="skills">
+                    <p>I have experience with Javascript and I like the process of working out the logic and making things work. I have experience of vanilla Javascript, using jQuey and with Vue.js<p>
+                </div>
+                <div id="phpParagraph" class="skills">
+                    <p>I have experience using PHP in many of the practice projects that I have made. I like that it has a lot of resources online to help learn and I find that I can usually find help quite easily if I do get stuck. I prefer using the Laravel framework as it makes setting up and getting started with the basics very quick and easy. It also makes writing and understanding database queries easier.</p>
+                </div>
+                <div id="systemsParagraph" class="skills">
+                    <p>I converted an old Windows laptop into a server. I installed Ubuntu Server on it. I use Docker to install services that I want to run. Currently, I use it to host my Home Assistant container, Plex container and I have connected my printer to it so that I can print from any device on the network. I plan to upgrade my server by creating a dedicated NAS server which I will then be able to more safely host files on using RAID. I am also a fan of trying to limit using the 'cloud' as much as possible and this will be a big step towards it.</p>
+                </div>
+            </div>
+
+            
+            <div id="contactForm">
+                <h2>Contact Me</h2>
+                <form action="/dummyformsent.html" target="_blank" method="GET">
+                        <label for="fname">Name</label>
+                        <input type="text" id="fname" name="name" placeholder="Your name..">
+                        
+                        <label for="email">Email</label>
+                        <input type="email" id="lname" name="email" placeholder="Your email..">
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        
+                        <input type="submit" value="Submit">
+                </form>
+            </div>
+
+    <script src="/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
